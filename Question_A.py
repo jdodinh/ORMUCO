@@ -8,9 +8,7 @@
 def main():
     l_1 = (1, 1)
     l_2 = (2, 6)
-    if (l_1[0] <= l_2[0] <= l_1[1]) or (l_1[0] <= l_2[1] <= l_1[1]):
-        print("The lines overlap")
-    elif (l_2[0] <= l_1[0] <= l_2[1]) or (l_2[0] <= l_1[1] <= l_2[1]):
+    if (l_1[0] <= l_2[0] <= l_1[1]) or (l_1[0] <= l_2[1] <= l_1[1]) or (l_2[0] <= l_1[0] <= l_2[1]) or (l_2[0] <= l_1[1] <= l_2[1]):
         print("The lines overlap")
     else:
         print("The lines don't overlap")
